@@ -1,106 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Great Cliffs - Contact</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body id="contact">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="contact">
     <header>
-        <div class="main-header">
-            <div class="logo">
-                <img src="images/logo.png" alt="Great Cliffs Logo">
-            </div>
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="activities.html">CLIFFS & ACTIVITIES</a></li>
-                    <li class="active"><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
+      <div class="main-header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Great Cliffs Logo" />
+          </a>
         </div>
+
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+
+            <li>
+              <a href="cliffs.html">CLIFFS</a>
+            </li>
+
+            <li>
+              <a href="activities.html">ACTIVITIES</a>
+            </li>
+
+            <li class="active">
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-        <h1>Contacting Us</h1>
-        <p>
-        You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
-        7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
-        the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
-        </p>
+      <h1>Contacting Us</h1>
 
-        <div class="contactinfo">
-            <div class="phone">
-                <span>Phone:</span>
-                <span>(800)GCLIFFS</span>
-            </div>
-            <div class="email">
-                <span>Email:</span>
-                <span>info@greatcliffs.com</span>
-            </div>
+      <p>
+        You can drop by the visitors information center at the cliff site that
+        you plan on visiting. They are open 7 days a week from 8.00AM to 5.00PM.
+        You can also contact us directly if you need additional information
+        about the Cliffs, Hours of Operations, Facilities or questions about
+        this site using one of the following:
+      </p>
+
+      <div class="contactinfo">
+        <div class="phone">
+          <span>Phone:</span>
+          <span>(800)GCLIFFS</span>
         </div>
 
-        <form action="/contact" method="post">  
-        <fieldset>  
-            <legend>Contact Form</legend>
-            <div class="textbox">
-                <label>Name:</label> 
-                <input type="text" name="name" placeholder="John Doe">  
-                <label>Email:</label>  
-                <input type="email" name="email" placeholder="johndoe@gmail.com"> 
-                <label>Phone:</label>
-                <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
-            </div>
+        <div class="email">
+          <span>Email:</span>
+          <span>info@greatcliffs.com</span>
+        </div>
+      </div>
 
-            <div class="radios">
-                <label>How should we contact you?</label>  
-                <input type="radio" name="contact" value="email" checked>Email 
-                <input type="radio" name="contact" value="phone">Phone
-            </div>
+      <form action="/contact" method="post">
+        <fieldset>
+          <legend>Contact Form</legend>
 
-            <div class="selectmenu">
-                <label>Which Cliff are you inquiring?</label>  
-                <select>
-                    <option>West Cliff</option>
-                    <option>North Cliff</option>
-                    <option>East Cliff</option>
-                    <option>South Cliff</option>
-                </select>
-            </div>
+          <div class="textbox">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="John Doe" />
 
-            <div class="commentbox">
-                <label>How did you hear about us:</label>  
-                <textarea></textarea>
-            </div>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="johndoe@gmail.com"
+            />
 
-            <div class="button">
-                <input type="submit" value="Inquire">
-            </div> 
-        </fieldset>  
-        </form>
+            <label for="phone">Phone:</label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              placeholder="xxx-xxx-xxxx"
+            />
+          </div>
+
+          <div class="radios">
+            <label>How should we contact you?</label>
+
+            <input
+              id="contact-email"
+              type="radio"
+              name="contact"
+              value="email"
+              checked
+            />
+            <label for="contact-email">Email</label>
+
+            <input
+              id="contact-phone"
+              type="radio"
+              name="contact"
+              value="phone"
+            />
+            <label for="contact-phone">Phone</label>
+          </div>
+
+          <div class="selectmenu">
+            <label for="cliff"> Which Cliff are you inquiring? </label>
+
+            <select id="cliff" name="cliff">
+              <option>West Cliff</option>
+              <option>North Cliff</option>
+              <option>East Cliff</option>
+              <option>South Cliff</option>
+            </select>
+          </div>
+
+          <div class="commentbox">
+            <label for="comments"> How did you hear about us: </label>
+
+            <textarea id="comments" name="comments"></textarea>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Inquire" />
+          </div>
+        </fieldset>
+      </form>
     </main>
+
     <section class="partners">
-        <ul>
-            <li class="partner"><img src="images/partners-bustour.png" alt="Bus Tour"></li>
-            <li class="partner"><img src="images/partners-cabinrental.png" alt="Cabin Rental"></li>
-            <li class="partner"><img src="images/partners-campingadv.png" alt="Camping Adventure"></li>
-            <li class="partner"><img src="images/partners-collegetours.png" alt="College Tours"></li>
-            <li class="partner"><img src="images/partners-bikerental.png" alt="Bike Rental"></li>
-            <li class="partner"><img src="images/partners-tourgroup.png" alt="Tour Group"></li>
-        </ul>
+      <ul>
+        <li class="partner">
+          <img src="images/partners-bustour.png" alt="Bus Tour" />
+        </li>
+
+        <li class="partner">
+          <img src="images/partners-cabinrental.png" alt="Cabin Rental" />
+        </li>
+
+        <li class="partner">
+          <img src="images/partners-campingadv.png" alt="Camping Adventure" />
+        </li>
+
+        <li class="partner">
+          <img src="images/partners-collegetours.png" alt="College Tours" />
+        </li>
+
+        <li class="partner">
+          <img src="images/partners-bikerental.png" alt="Bike Rental" />
+        </li>
+
+        <li class="partner">
+          <img src="images/partners-tourgroup.png" alt="Tour Group" />
+        </li>
+      </ul>
     </section>
+
     <footer>
-        <div id="nondisclaimer">
-            <div class="copy">&copy; Copyright 2026 :: GreatCliffs.com</div>
-            <div class="social">
-                <span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-facebook fa-stack-1x fa-inverse"></span></span>
-                <span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-instagram fa-stack-1x fa-inverse"></span></span>
-                <span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-twitter fa-stack-1x fa-inverse"></span></span>
-            </div>
-        </div>
-        <div id="disclaimer">
-            <p>This website is designed and created solely for educational purposes only.</p>
-        </div>
+      <div id="nondisclaimer">
+        <div class="copy">&copy; Copyright 2026 :: GreatCliffs.com</div>
+
+        <div class="social">Facebook &nbsp; Instagram &nbsp; Twitter</div>
+      </div>
+
+      <div id="disclaimer">
+        <p>
+          This website is designed and created solely for educational purposes
+          only.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

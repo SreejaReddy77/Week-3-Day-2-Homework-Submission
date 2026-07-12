@@ -1,48 +1,62 @@
 /* General */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     width: 100%;
-    height: 400px;
+    height: 380px;
+    background-position: center top !important;
 }
 
-#home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+#home header,
+#cliffs header {
+    background: no-repeat lightgrey url("images/cliff_ocean.png");
     background-size: 1500px;
 }
 
 #activities header {
-    background: no-repeat lightgrey url(images/runfly.jpg);
+    background: no-repeat lightgrey url("images/runfly.jpg");
     background-size: 1500px;
 }
 
 #contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background: no-repeat lightgrey url("images/cliff_rock.jpg");
     background-size: 1500px;
 }
 
+/* Header and navigation */
+
 .main-header {
     width: 700px;
+    height: 85px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 
 .logo {
     float: left;
-    width: 200px;
+    width: 215px;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 0.88);
 }
 
 .logo img {
-    width: 120px;
+    display: block;
+    width: 215px;
+    height: 85px;
+    object-fit: contain;
 }
 
 .main-menu {
-    float: right;
-    margin-top: 20px;
+    float: left;
 }
 
 .main-menu ul {
@@ -53,15 +67,20 @@ header {
 
 .main-menu li {
     float: left;
-    background-color: #fff;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-left: 1px solid #e6e6e6;
 }
 
 .main-menu li a {
-    display: block;
-    padding: 20px;
-    color: #888;
+    display: flex;
+    height: 85px;
+    padding: 0 22px;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 12px;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -75,8 +94,11 @@ header {
     color: #fff;
 }
 
+/* Main content */
+
 main {
     width: 1200px;
+    min-height: 280px;
     margin: 0 auto;
     padding: 25px 0;
 }
@@ -87,13 +109,32 @@ main h1 {
 
 main p {
     font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Cliffs page */
+
+.cliff-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.cliff-list article {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.cliff-list h2 {
+    color: #4977d1;
 }
 
 /* Partners */
+
 .partners {
     width: 100%;
     padding: 25px 0;
-    background-color: #4977D1;
+    background-color: #4977d1;
 }
 
 .partners ul {
@@ -113,12 +154,39 @@ main p {
     width: 110px;
     height: 110px;
 }
+.partners {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #4977d1;
+}
+
+.partners ul {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.partners .partner {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.partners .partner img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 /* Footer */
+
 footer #nondisclaimer {
     padding: 15px;
     color: #fff;
-    background: #4977D1;
+    background-color: #4977d1;
 }
 
 footer #nondisclaimer .copy {
@@ -129,61 +197,64 @@ footer #nondisclaimer .social {
     float: right;
 }
 
-footer #nondisclaimer .social .fa-instagram {
-    background: #125688;
-    color: white;
-}
-
 footer #disclaimer {
     padding: 10px;
     text-align: center;
     background-color: #eee;
 }
 
-/* Activities */
+/* Activities page */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
 table {
     width: 1000px;
     margin: 4em auto 0 auto;
+    border-collapse: collapse;
 }
 
 caption {
-    background: #852B1B;
     height: 40px;
+    padding-top: 1em;
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
-    padding-top: 1em;
+    background-color: #852b1b;
 }
 
 thead {
-    background: #BDE1FF;
+    background-color: #bde1ff;
 }
 
 tbody {
-    background: #EEFFE6;
     text-align: center;
+    background-color: #eeffe6;
 }
 
-th, td {
+th,
+td {
     width: 225px;
     height: 75px;
     vertical-align: middle;
-    border: solid 1px #852B1B;
+    border: solid 1px #852b1b;
 }
 
 th:first-child {
     width: 125px;
     height: 50px;
-    background: #4977D1;
     color: #fff;
+    background-color: #4977d1;
 }
 
 td:first-child {
     font-weight: bold;
-    background: #BDE1FF;
+    background-color: #bde1ff;
 }
 
-/* Contact */
+/* Contact page */
+
 .contactinfo {
     margin: 20px 0;
 }
@@ -193,7 +264,7 @@ td:first-child {
 }
 
 .contactinfo span:first-child {
-    color: #4977D1;
+    color: #4977d1;
     font-weight: bold;
 }
 
@@ -208,7 +279,7 @@ form fieldset {
 }
 
 form legend {
-    color: #4977D1;
+    color: #4977d1;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -221,9 +292,9 @@ form .textbox label {
 }
 
 form .textbox input {
+    display: block;
     width: 500px;
     height: 25px;
-    display: block;
 }
 
 form .radios,
@@ -232,7 +303,7 @@ form .commentbox {
     margin-top: 20px;
 }
 
-form .radios label,
+form .radios > label:first-child,
 form .selectmenu label,
 form .commentbox label {
     font-weight: bold;
@@ -257,8 +328,96 @@ form .button {
 form .button input {
     width: 130px;
     height: 35px;
-    border: 0;
     color: #fff;
     font-weight: bold;
-    background-color: #4977D1;
+    background-color: #4977d1;
+    border: 0;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background-color: #9ed034;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 900px) {
+    header {
+        background-size: cover !important;
+    }
+
+    .main-header {
+        width: 96%;
+        padding-top: 35px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .main-menu li a {
+        padding: 0 12px;
+        font-size: 11px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .partners ul {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 440px;
+    }
+
+    .main-header {
+        padding-top: 20px;
+    }
+
+    .logo,
+    .main-menu {
+        float: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .main-menu {
+        margin-top: 10px;
+    }
+
+    .main-menu ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-menu li {
+        float: none;
+        height: 55px;
+    }
+
+    .main-menu li a {
+        height: 55px;
+        padding: 0 10px;
+    }
+
+    .cliff-list {
+        grid-template-columns: 1fr;
+    }
+
+    form .textbox input,
+    form .commentbox textarea,
+    form .button {
+        width: 100%;
+    }
 }
