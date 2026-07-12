@@ -128,6 +128,57 @@ main p {
 .cliff-list h2 {
     color: #4977d1;
 }
+/* Cliffs page header */
+
+#cliffs header {
+    background: no-repeat lightgrey url("images/cliff_rock.jpg");
+    background-size: 1500px;
+}
+
+/* Cliffs page content */
+
+.cliffs {
+    width: 100%;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.cliffs .cliff {
+    display: inline-block;
+    width: 45%;
+    margin: 15px;
+    vertical-align: top;
+    background-color: #fff;
+}
+
+.cliffs .cliff-title {
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #852b1b;
+}
+
+.cliffs .cliff img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+footer .social .fa-stack {
+    margin-left: 6px;
+    font-size: 18px;
+}
+
+footer .social .fa-circle {
+    color: #333;
+}
+
+footer .social .fa-facebook,
+footer .social .fa-instagram,
+footer .social .fa-twitter {
+    color: #fff;
+}
 
 /* Partners */
 
@@ -337,87 +388,4 @@ form .button input {
 
 form .button input:hover {
     background-color: #9ed034;
-}
-
-/* Responsive layout */
-
-@media screen and (max-width: 900px) {
-    header {
-        background-size: cover !important;
-    }
-
-    .main-header {
-        width: 96%;
-        padding-top: 35px;
-    }
-
-    .logo {
-        width: 180px;
-    }
-
-    .logo img {
-        width: 180px;
-    }
-
-    .main-menu li a {
-        padding: 0 12px;
-        font-size: 11px;
-    }
-
-    main {
-        width: 92%;
-    }
-
-    .partners ul {
-        width: 92%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    header {
-        height: 440px;
-    }
-
-    .main-header {
-        padding-top: 20px;
-    }
-
-    .logo,
-    .main-menu {
-        float: none;
-    }
-
-    .logo {
-        margin: 0 auto;
-    }
-
-    .main-menu {
-        margin-top: 10px;
-    }
-
-    .main-menu ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .main-menu li {
-        float: none;
-        height: 55px;
-    }
-
-    .main-menu li a {
-        height: 55px;
-        padding: 0 10px;
-    }
-
-    .cliff-list {
-        grid-template-columns: 1fr;
-    }
-
-    form .textbox input,
-    form .commentbox textarea,
-    form .button {
-        width: 100%;
-    }
 }
