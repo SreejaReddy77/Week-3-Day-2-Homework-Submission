@@ -1,0 +1,264 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+}
+
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
+
+.main-header {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.main-menu {
+    float: right;
+    margin-top: 20px;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-menu li {
+    float: left;
+    background-color: #fff;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 20px;
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-menu li.active,
+.main-menu li:hover {
+    background-color: #9ed034;
+}
+
+.main-menu li.active a,
+.main-menu li:hover a {
+    color: #fff;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+main h1 {
+    color: #9ed034;
+}
+
+main p {
+    font-size: 14px;
+}
+
+/* Partners */
+.partners {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #4977D1;
+}
+
+.partners ul {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.partners .partner {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.partners img {
+    width: 110px;
+    height: 110px;
+}
+
+/* Footer */
+footer #nondisclaimer {
+    padding: 15px;
+    color: #fff;
+    background: #4977D1;
+}
+
+footer #nondisclaimer .copy {
+    display: inline-block;
+}
+
+footer #nondisclaimer .social {
+    float: right;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+footer #disclaimer {
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+}
+
+/* Activities */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+
+caption {
+    background: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+thead {
+    background: #BDE1FF;
+}
+
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+
+th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+
+/* Contact */
+.contactinfo {
+    margin: 20px 0;
+}
+
+.contactinfo span {
+    display: block;
+}
+
+.contactinfo span:first-child {
+    color: #4977D1;
+    font-weight: bold;
+}
+
+.contactinfo .phone,
+.contactinfo .email {
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    padding: 20px;
+    border: 1px solid #9ed034;
+}
+
+form legend {
+    color: #4977D1;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form .textbox label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form .textbox input {
+    width: 500px;
+    height: 25px;
+    display: block;
+}
+
+form .radios,
+form .selectmenu,
+form .commentbox {
+    margin-top: 20px;
+}
+
+form .radios label,
+form .selectmenu label,
+form .commentbox label {
+    font-weight: bold;
+}
+
+form .commentbox label {
+    display: block;
+}
+
+form .commentbox textarea {
+    width: 500px;
+    height: 150px;
+    resize: none;
+}
+
+form .button {
+    width: 500px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+form .button input {
+    width: 130px;
+    height: 35px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4977D1;
+}
